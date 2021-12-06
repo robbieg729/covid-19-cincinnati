@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">        
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <title>Guidance: protecting yourself</title>
+    </head>
+    <body>        
+        <!-- Bootstrap navbar -->        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="ohioOutline.png" class="img-fluid" alt="Responsive image" width = "100"></a>
+            <h1>Covid-19 in Cincinnati, OH</h1>         
+        </nav>
+        <img src="covidImageHeader.jpg" width="1550">
+        <!-- Bootstrap container, with fluid class -->       
+        <div class="container-fluid">
+            <br/>
+            <!-- Bootstrap row -->                                 
+            <div class="row">
+                <!-- Bootstrap column -->
+                <div class="col col-menu">
+                    <h3>Menu</h3>
+                    <!-- Bootstrap list group -->
+                    <ul class="list-group list-group-flush">
+                        <!-- Bootstrap list group item -->
+                        <li class="list-group-item menu-item"><a href="index.html">Interactive map</a></li>
+                        <li class="list-group-item menu-item" role="button" data-bs-toggle="collapse" data-bs-target="#guidanceCollapse" aria-expanded="false" aria-controls="guidanceCollapse">
+                            Guidance
+                        </li>
+                        <!-- Bootstrap collapse element, with show class to indicate it is being shown when the website is loaded -->
+                        <div class="collapse show" id="guidanceCollapse">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-collapse-item"><a href="symptoms.html">Symptoms</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="protectingYourself.html">Protecting yourself</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="whatToDoIfYouAreSick.html">What to do if you feel ill</a></li>
+                            </ul>                            
+                        </div>
+                        <li class="list-group-item menu-item"><a href="publicTransport.html">Public transport info</a></li>
+                    </ul>
+                    <br/>
+                    <h3>Sources</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item menu-item"><a href="https://www.roche.com/strongertogether/covid-19-antibodies-immunity.htm" target="_blank">Header image taken from Roche</a></li>
+                        <li class="list-group-item menu-item"><a href="https://www.pinterest.com/pin/845410161277148098/" target="_blank">Ohio state image by SunCatcher Studio</a></li>
+                    </ul>                                
+                </div>
+                <div class="col">
+                    <h3>Protecting yourself</h3>
+                    <p>The Ohio State Government has outlined the following guidance to help you better understand the virus in terms of symptoms, how to ensure you do
+                        not contract it, and what to do if you begin to feel sick. Please read through the following sections carefully and ensure that you and members of your
+                        household are following this guidance correctly.
+                    </p>                    
+                    <p>In order to prevent yourself from contracting the virus, the Centers for Disease Control and Prevention (CDC) recommends that you follow these steps:</p>
+                    <!-- Bootstrap accordion, with flush class -->
+                    <div class="accordion accordion-flush">
+                        <!-- Bootstrap accordion item -->
+                        <div class="accordion-item">                                        
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#washHandsCollapse" aria-expanded="false" aria-controls="washHandsCollapse">
+                                <h5>Wash your hands regularly</h5>
+                            </button>                                        
+                            <div class="accordion-collapse collapse hide" id="washHandsCollapse">
+                                <ul>
+                                    <li>
+                                        Wash your hands often with soap and water for 20 seconds, particularly after you have been in a public area, or after you have blown your nose,
+                                        sneezed, or coughed
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        In a situation where soap and water is not available, hand sanitizer containing at least 60% alcohol is sufficient. You should cover your
+                                        hands all over and rub them until they feel dry
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        When your hands are unwashed, avoid touching your face, specifically your eyes, nose, and mouth
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#avoidContactCollapse" aria-expanded="false" aria-controls="avoidContactCollapse">
+                                <h5>Avoid close contact</h5>
+                            </button> 
+                            <div class="accordion-collapse collapse hide" id="avoidContactCollapse">
+                                <ul>
+                                    <li>
+                                        Avoid close contact with people who exhibit symptoms of the virus, even if they are in your own home. If possible, try to maintain at least 6
+                                        feet distance between you and the person who is sick
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        Avoid close contact with anybody when outside your home
+                                        <br/>                            
+                                        <ul>
+                                            <br/>
+                                            <li>
+                                                People who do not exhibit symptoms may still be able to transmit the virus
+                                            </li>
+                                            <br/>
+                                            <li>
+                                                Ensure there is at least 6 feet between you and other people
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faceMaskCollapse" aria-expanded="false" aria-controls="faceMaskCollapse">
+                                <h5>Wear a face mask when around others</h5>
+                            </button> 
+                            <div class="accordion-collapse collapse hide" id="faceMaskCollapse">
+                                <ul>
+                                    <li>
+                                        Face masks are intended to prevent you from transmitting the virus to others, which could happen even if you do not feel sick or do
+                                        not have symptoms
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        Face masks are not required in your own home, but are mandatory in all indoor public spaces in Cincinnati, and are highly recommended
+                                        at all times when outside
+                                        <br/>
+                                        <ul>
+                                            <br/>
+                                            <li>It is not necessary to wear a face mask when sitting down at a bar or restaurant</li>
+                                        </ul> 
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        Face masks should not be placed on children under the age of 2 or anyone who is having trouble breathing
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        NOTE: Face masks are not a substitute for social distancing, and this should still be practiced at all times when outside
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coverCoughsCollapse" aria-expanded="false" aria-controls="coverCoughsCollapse">
+                                <h5>Cover coughs and sneezes</h5>
+                            </button> 
+                            <div class="accordion-collapse collapse hide" id="coverCoughsCollapse">
+                                <ul>
+                                    <li>
+                                        If you are around others and not wearing a face mask, you should cover up a sneeze or a cough by placing a tissue over your mouth and nose
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        These tissues should then be thrown into the trash immediately, and you should then proceed to wash your hands in the advised manner
+                                        (see 'Wash your hands regularly' section)
+                                    </li>                        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                                     
+                </div>                       
+            </div>                                
+        </div>
+        <!-- jQuery JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>

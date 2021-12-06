@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">        
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <title>Guidance: what to do if you feel ill</title>
+    </head>
+    <body>        
+        <!-- Bootstrap navbar -->        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="ohioOutline.png" class="img-fluid" alt="Responsive image" width = "100"></a>
+            <h1>Covid-19 in Cincinnati, OH</h1>         
+        </nav>
+        <img src="covidImageHeader.jpg" width="1550">
+        <!-- Bootstrap container, with fluid class -->       
+        <div class="container-fluid">
+            <br/>
+            <!-- Bootstrap row -->                                 
+            <div class="row">
+                <!-- Bootstrap column -->
+                <div class="col col-menu">
+                    <h3>Menu</h3>
+                    <!-- Bootstrap list group -->
+                    <ul class="list-group list-group-flush">
+                        <!-- Bootstrap list group item -->
+                        <li class="list-group-item menu-item"><a href="index.html">Interactive map</a></li>
+                        <li class="list-group-item menu-item" role="button" data-bs-toggle="collapse" data-bs-target="#guidanceCollapse" aria-expanded="false" aria-controls="guidanceCollapse">
+                            Guidance
+                        </li>
+                        <!-- Bootstrap collapse element, with show class to indicate it is being shown when the website is loaded -->
+                        <div class="collapse show" id="guidanceCollapse">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-collapse-item"><a href="symptoms.html">Symptoms</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="protectingYourself.html">Protecting yourself</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="whatToDoIfYouAreSick.html">What to do if you feel ill</a></li>
+                            </ul>                            
+                        </div>
+                        <li class="list-group-item menu-item"><a href="publicTransport.html">Public transport info</a></li>
+                    </ul>
+                    <br/>
+                    <h3>Sources</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item menu-item"><a href="https://www.roche.com/strongertogether/covid-19-antibodies-immunity.htm" target="_blank">Header image taken from Roche</a></li>
+                        <li class="list-group-item menu-item"><a href="https://www.pinterest.com/pin/845410161277148098/" target="_blank">Ohio state image by SunCatcher Studio</a></li>
+                    </ul>                                
+                </div>
+                <div class="col">
+                    <h3>What to do if you feel ill</h3>
+                    <p>
+                        The Centers for Disease Control and Prevention (CDC) recommends that you follow these steps if you begin to feel ill or contract the virus:
+                    </p>
+                    <!-- Bootstrap accordion, with flush class -->
+                    <div class="accordion accordion-flush">
+                        <!-- Bootstrap accordion item -->
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#testCollapse" aria-expanded="false" aria-controls="testCollapse">
+                                <h5>Book a Covid-19 test</h5>
+                            </button>
+                            <div class="accordion-collapse collapse hide" id="testCollapse">
+                                <ul>
+                                    <li>
+                                        If your current symptoms match those common with Covid-19, you should book a test at the testing site nearest to you.
+                                        You can go to the 'Interactive map' page in the menu on the left to look for testing sites near you
+                                    </li>
+                                    <br/>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#isolateCollapse" aria-expanded="false" aria-controls="isolateCollapse">
+                                <h5>Isolate at home</h5>
+                            </button>
+                            <div class="accordion-collapse collapse hide" id="isolateCollapse">
+                                <ul>
+                                    <li>
+                                        Most people who contract the virus will only have a mild fever and should be able to recover by resting at home.
+                                        You should not leave your house unless it is to get medical care
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        The current CDC isolation period is 10 days after symptoms first appear, or 10 days after a positive test result if you
+                                        received a test
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        You should stay in contact with your local doctor in case you feel there is an emergency such as severe shortness
+                                        of breath. This is especially important for people who are more at-risk, such as those with underlying medical conditions
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        If you require assistance with shopping for groceries, the safest way to do so would be to call one of your neighbors who
+                                        could go to the store for you and leave the items on your doorstep
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#separateCollapse" aria-expanded="false" aria-controls="separateCollapse">
+                                <h5>Separate yourself from others in your home</h5>
+                            </button>
+                            <div class="accordion-collapse collapse hide" id="separateCollapse">
+                                <ul>
+                                    <li>
+                                        When isolating, try to stay in a specific room and avoid other people and pets in your house as much as possible. If this
+                                        is too difficult, wear a mask around others and practice social distancing
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        Where possible, you should use a separate bathroom to others in your house
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        Alert others that you have been in contact with recently that you may have contracted the virus, so that they know and can
+                                        book a test
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#monitorCollapse" aria-expanded="false" aria-controls="monitorCollapse">
+                                <h5>Monitor your health closely</h5>
+                            </button>
+                            <div class="accordion-collapse collapse hide" id="monitorCollapse">
+                                <ul>
+                                    <li>
+                                        You should ensure that your symptoms do not worsen to an emergency-level threat. This can be done by taking medicines such as
+                                        acetaminophen. Ask your doctor or local health department for further recommendations
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        If you notice any of these symptoms developing, you should seek emergency help immediately:
+                                        <br/>
+                                        <ul>
+                                            <br/>
+                                            <li>
+                                                Trouble breathing
+                                            </li>
+                                            <br/>
+                                            <li>
+                                                Constant chest pains
+                                            </li>
+                                            <br/>
+                                            <li>
+                                                Inability to wake or stay awake
+                                            </li>
+                                            <br/>
+                                            <li>
+                                                Bluish lips
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cleanCollapse" aria-expanded="false" aria-controls="cleanCollapse">
+                                <h5>Clean high-touch surfaces daily</h5>
+                            </button>
+                            <div class="accordion-collapse collapse hide" id="cleanCollapse">
+                                <ul>
+                                    <li>
+                                        Clean and disinfect areas that only you use such as the room you are isolating in and your bathroom
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        Have someone else in your house clean and disinfect common areas such as door handles, kitchen tops, and other
+                                        surfaces that are commonly touched during the day
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        This cleaning should be done with household cleaners and disinfectants. Ensure you follow the instructions on the
+                                        product for efficient usage
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>            
+                </div>                       
+            </div>                            
+        </div>
+        <!-- jQuery JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>

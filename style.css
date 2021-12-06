@@ -1,0 +1,119 @@
+body{
+    overflow-x: hidden;
+}
+nav{
+    background-color: darkslateblue
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 72px;
+}
+.col-menu{
+    margin-right: -1000px;
+}
+.data-heading{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.data{
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;    
+}
+area{
+    cursor: pointer;
+}
+.col-lg{
+    background-color: darkslateblue
+}
+.dropdown-menu{
+    overflow-y: scroll;     
+}
+text{
+    fill: white;
+    font-size: 12px;
+}
+.bar{
+    transition-duration: 1s;
+    fill: blue;
+    width: 15;
+}
+.pie-chart-overlay{
+    transition-duration: 1s;
+}
+.line-chart-leveller{
+    stroke: #d3d3d3;
+    stroke-width: 1;
+}
+.nav-item{
+    font-size: 24px;
+    color: white;
+}
+.menu-item{
+    width: 200px;
+    font-size: 18px;
+}
+.menu-collapse-item{
+    width: 180px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.form-check-input{
+    border-width: 2px;
+    border-color: black;
+}
+label{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+/* img-overlay-wrap class taken from StackOverflow */
+.img-overlay-wrap {
+    position: relative;
+    display: inline-block;
+    transition: transform 150ms ease-in-out;
+}  
+.img-overlay-wrap form{
+    position: absolute;
+    top: 10;
+    left: 10;
+    background-color: white;
+    padding: 10px;
+    width: 170px;
+    visibility: hidden;
+}
+.img-overlay-wrap svg{
+    position: absolute;
+    top: 0;
+    left: 90;
+    visibility: hidden;
+}
+.img-overlay-wrap button{    
+    background-color: darkslateblue;
+}
+.img-overlay-wrap button:focus{
+    background-color: darkslateblue;
+}
+.img-overlay-wrap button:hover{
+    background-color: darkslateblue;
+}
+.hospital-circle{
+    fill: blue;      
+}
+.testing-site-circle{
+    fill: red;
+}
+.store-circle{
+    fill: #32CD32;
+}
+.bar-circle{
+    fill: black;
+}

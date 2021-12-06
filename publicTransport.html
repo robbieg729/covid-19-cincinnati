@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"> 
+        <!-- D3 JavaScript -->       
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <title>Public transport info</title>
+    </head>
+    <body>        
+        <!-- Bootstrap navbar -->        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="ohioOutline.png" class="img-fluid" alt="Responsive image" width = "100"></a>
+            <h1>Covid-19 in Cincinnati, OH</h1>         
+        </nav>
+        <img src="covidImageHeader.jpg" width="1550">
+        <!-- Bootstrap container, with fluid class -->       
+        <div class="container-fluid">
+            <br/>
+            <!-- Bootstrap row -->                                 
+            <div class="row">
+                <!-- Bootstrap column -->
+                <div class="col col-menu">
+                    <h3>Menu</h3>
+                    <!-- Bootstrap list group, with Bootstrap flush class -->
+                    <ul class="list-group list-group-flush">
+                        <!-- Bootstrap list group item -->
+                        <li class="list-group-item menu-item"><a href="index.html">Interactive map</a></li>
+                        <li class="list-group-item menu-item" role="button" data-bs-toggle="collapse" data-bs-target="#guidanceCollapse" aria-expanded="false" aria-controls="guidanceCollapse">
+                            Guidance
+                        </li>
+                        <!-- Bootstrap collapse element -->
+                        <div class="collapse" id="guidanceCollapse">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-collapse-item"><a href="symptoms.html">Symptoms</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="protectingYourself.html">Protecting yourself</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="whatToDoIfYouAreSick.html">What to do if you feel ill</a></li>
+                            </ul>                            
+                        </div>
+                        <li class="list-group-item menu-item"><a href="publicTransport.html">Public transport info</a></li>
+                    </ul>
+                    <br/>
+                    <h3>Sources</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item menu-item"><a href="https://www.roche.com/strongertogether/covid-19-antibodies-immunity.htm" target="_blank">Header image taken from Roche</a></li>
+                        <li class="list-group-item menu-item"><a href="https://www.pinterest.com/pin/845410161277148098/" target="_blank">Ohio state image by SunCatcher Studio</a></li>
+                    </ul>                                
+                </div>
+                <div class="col">
+                    <h3>Public transport info</h3>
+                    <br/>
+                    <figure align="center">
+                        <img src="bus.jpg" width="1000">
+                        <figcaption>A Cincinnati metro bus. Photo by Cincinnati Metro</figcaption>
+                    </figure>                    
+                    <p>Public transport in Cincinnati has not been majorly affected by the Covid-19 pandemic. All bus, tram, and metro lines are still operating,
+                        however there are certain recommendations that citizens should follow when using public transport, such as: 
+                    </p>
+                    <ul>
+                        <li>
+                            Wearing a face mask (mandatory)
+                        </li>
+                        <br/>
+                        <li>
+                            Not sitting next to someone if there are seats available that no one is sitting next to
+                        </li>
+                        <br/>
+                        <li>
+                            Not touching surfaces like hand rails unless absolutely necessary (for example, in the case where you need to stand up)
+                        </li>
+                        <br/>
+                        <li>
+                            Setting up contactless payment on your phone or credit card
+                        </li>
+                        <br/>
+                        <li>
+                            Not using public transport if you feel unwell or begin to develop symptoms of the virus
+                        </li>
+                    </ul>
+                    <br/>
+                    <p>Additionally, to further help prevent the spread of the virus, all public transport companies in Cincinnati are undergoing daily vehicle
+                        cleaning for all vehicles in use. This includes:
+                    </p>
+                    <ul>
+                        <li>
+                            Using an EPA-rated (Environmental Protection Agency) Tier 1 disinfectant that gets rid of the harmful virus on all major bus surfaces such
+                            as seats and hand-rails
+                        </li>
+                        <br/>
+                        <li>
+                            Installing hand-sanitizing stations in all garages and office, for use by vehicle operators and employees
+                        </li>
+                    </ul>
+                </div>                                 
+            </div>
+            <br/>
+        </div>
+       <!-- jQuery JavaScript -->
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <!-- Bootstrap JavaScript -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   </body>
+</html>

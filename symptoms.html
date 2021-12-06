@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <!-- D3 JavaScript -->        
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <title>Guidance: symptoms</title>
+    </head>
+    <body>
+        <!-- Bootstrap navbar -->        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html"><img src="ohioOutline.png" class="img-fluid" alt="Responsive image" width = "100"></a>
+            <h1>Covid-19 in Cincinnati, OH</h1>         
+        </nav>
+        <img src="covidImageHeader.jpg" width="1550">
+        <!-- Bootstrap container, with fluid class -->       
+        <div class="container-fluid">
+            <br/>
+            <!-- Bootstrap row -->                                 
+            <div class="row">
+                <!-- Bootstrap column -->
+                <div class="col col-menu">
+                    <h3>Menu</h3>
+                    <!-- Bootstrap list group -->
+                    <ul class="list-group list-group-flush">
+                        <!-- Bootstrap list group item -->
+                        <li class="list-group-item menu-item"><a href="index.html">Interactive map</a></li>
+                        <li class="list-group-item menu-item" role="button" data-bs-toggle="collapse" data-bs-target="#guidanceCollapse" aria-expanded="false" aria-controls="guidanceCollapse">
+                            Guidance
+                        </li>
+                        <!-- Bootstrap collapse element, with show class to indicate it is being shown when the website is loaded -->
+                        <div class="collapse show" id="guidanceCollapse">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item menu-collapse-item"><a href="symptoms.html">Symptoms</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="protectingYourself.html">Protecting yourself</a></li>
+                                <li class="list-group-item menu-collapse-item"><a href="whatToDoIfYouAreSick.html">What to do if you feel ill</a></li>
+                            </ul>                            
+                        </div>
+                        <li class="list-group-item menu-item"><a href="publicTransport.html">Public transport info</a></li>
+                    </ul>
+                    <br/>
+                    <h3>Sources</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item menu-item"><a href="https://www.roche.com/strongertogether/covid-19-antibodies-immunity.htm" target="_blank">Header image taken from Roche</a></li>
+                        <li class="list-group-item menu-item"><a href="https://www.pinterest.com/pin/845410161277148098/" target="_blank">Ohio state image by SunCatcher Studio</a></li>
+                    </ul>                                 
+                </div>
+                <div class="col">
+                    <h3>Symptoms</h3>
+                    <p>
+                        People confirmed to have been infected have experienced a wide variety of symptoms, ranging from few symptoms or asymptomatic to severe illness,
+                        and in the worst cases, death. The most noticeable symptoms are:
+                    </p>
+                    <ul>
+                       <li>Fever</li>
+                       <br/>
+                       <li>Dry cough</li>
+                       <br/>
+                       <li>Shortness of breath</li>
+                       <br/>
+                       <li>Loss of smell or taste</li>
+                    </ul>
+                    <p>
+                       The Centers for Disease Control and Prevention (CDC) say that symptoms can appear any time between 2 days and 14 days after exposure to the virus.
+                       Covid-19 can be fatal, especially in those with underlying health issues to do with the heart and lungs, and in those who are above 60 years of age.
+                    </p>
+                    <p>
+                        If you begin to contract any of these symptoms, it is imperative that you take the necessary course of action immediately. See the 'What to do if you feel ill' tab
+                        under 'Guidance' for details on how to do so.
+                    </p>              
+                </div>                       
+            </div>                                  
+        </div>
+        <!-- jQuery JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>
